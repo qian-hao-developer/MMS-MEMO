@@ -1,0 +1,14 @@
+○　NEO_BUG-2496 #16448 NeoHome -> 現在放送中 -> JC-HITS で全画面視聴後、チャンネル上キーを連打すると、キー押下をやめてもチャンネルザッピングがしばらく続く
+  → 161109
+  * ContentQueryMapを使用するときに、以下の点がわかった
+    - データが更新された時に、requery()が呼ばれること
+    - requery()の中処理として、cursorの値をvalueにキャッシュする動作があるが、String型のみ対応している
+  * ContentQueryMapを自作し、チャンネルUP・DOWNに使う一番上のgetChannelに対して、実装を入れ替えた
+  * Programも似たような実装をしてと指摘された
+    - ユーザーが動作するときに、ProgramのUriを作るに使うStartTimeとEndTimeを統一し、当時刻の0秒(16:12:13→16:12:00)
+      にし、Cursorをqueryする。
+    - Cursorの更新時刻は、次の分になる前(59秒)の時に、Uriを更新する。
+    - Uriがローカルに保持している前回のUriと一致しない時に、ContentQueryMapをrequeryする
+    以上の実装を実施中
+      - rowNameとrowNameを保存するための識別子を考え中
+  → 161111に移す
