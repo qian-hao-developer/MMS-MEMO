@@ -1,0 +1,60 @@
+11-22 11:03:51.204 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel
+11-22 11:03:51.204 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:03:51.204 4527-4527/com.kddi.catv.neo.uiapp D/hqian: NeoHomeActivity: stbModel.publish
+11-22 11:03:51.205 4527-4527/com.kddi.catv.neo.uiapp D/hqian: publish:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:03:53.182 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:03:53.335 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#handler.post:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:03:53.335 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#hanlder.post#isInitialized
+11-22 11:06:08.719 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvController: createListener
+11-22 11:06:08.719 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel
+11-22 11:06:08.719 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:08.719 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvSimpleController: stbModel.publish
+11-22 11:06:08.719 4527-4527/com.kddi.catv.neo.uiapp D/hqian: publish:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:08.760 4527-4527/com.kddi.catv.neo.uiapp D/hqian: ChannelModel: createListener
+11-22 11:06:08.761 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel
+11-22 11:06:08.761 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:08.761 4527-4527/com.kddi.catv.neo.uiapp D/hqian: publish:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:09.046 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:09.047 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:09.116 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#handler.post:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:09.116 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#hanlder.post#isInitialized
+11-22 11:06:09.116 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvController: createListener#return
+11-22 11:06:09.117 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvController: createHWclickListener
+11-22 11:06:09.118 4527-4527/com.kddi.catv.neo.uiapp D/hqian: setHWButtonClickListener:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:09.122 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#handler.post:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:09.123 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#hanlder.post#isInitialized
+11-22 11:06:09.123 4527-4527/com.kddi.catv.neo.uiapp D/hqian: ChannelModel: createListener#return
+11-22 11:06:09.127 4527-4527/com.kddi.catv.neo.uiapp D/hqian: ChannelModel: createHWclickListener
+11-22 11:06:09.128 4527-4527/com.kddi.catv.neo.uiapp D/hqian: setHWButtonClickListener:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:34.798 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel
+11-22 11:06:34.798 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:06:34.798 4527-4527/com.kddi.catv.neo.uiapp D/hqian: NeoHomeActivity: stbModel.publish
+11-22 11:06:34.798 4527-4527/com.kddi.catv.neo.uiapp D/hqian: publish:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:06:34.948 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:06:35.208 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#handler.post:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:06:35.208 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#hanlder.post#isInitialized
+11-22 11:06:41.333 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvController: createListener
+11-22 11:06:41.333 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel
+11-22 11:06:41.333 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.333 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvSimpleController: stbModel.publish
+11-22 11:06:41.333 4527-4527/com.kddi.catv.neo.uiapp D/hqian: publish:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.345 4527-4527/com.kddi.catv.neo.uiapp D/hqian: ChannelModel: createListener
+11-22 11:06:41.346 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel
+11-22 11:06:41.346 4527-4527/com.kddi.catv.neo.uiapp D/hqian: new StbModel:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.346 4527-4527/com.kddi.catv.neo.uiapp D/hqian: publish:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.549 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.550 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.592 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#handler.post:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.592 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#hanlder.post#isInitialized
+11-22 11:06:41.592 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvController: createListener#return
+11-22 11:06:41.592 4527-4527/com.kddi.catv.neo.uiapp D/hqian: TvController: createHWclickListener
+11-22 11:06:41.592 4527-4527/com.kddi.catv.neo.uiapp D/hqian: setHWButtonClickListener:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.593 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#handler.post:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:41.593 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: serviceConnection#onServiceConnected#hanlder.post#isInitialized
+11-22 11:06:41.593 4527-4527/com.kddi.catv.neo.uiapp D/hqian: ChannelModel: createListener#return
+11-22 11:06:41.593 4527-4527/com.kddi.catv.neo.uiapp D/hqian: ChannelModel: createHWclickListener
+11-22 11:06:41.593 4527-4527/com.kddi.catv.neo.uiapp D/hqian: setHWButtonClickListener:mContext = com.kddi.catv.neo.uiapp.player.PlayerActivity@6d11a53
+11-22 11:06:53.224 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbManagerService: onReceive#ChannelUp
+11-22 11:06:53.226 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbManagerService: onReceive#ChannelUp#ViewingMode.Channel
+11-22 11:06:53.227 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: HWChannelListener#handler.post:mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
+11-22 11:06:53.233 4527-4527/com.kddi.catv.neo.uiapp D/hqian: StbModel: HWChannelListener#mHandler.post#mContext = com.kddi.catv.neo.uiapp.home.NeoHomeActivity@5db926b
