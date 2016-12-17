@@ -1,0 +1,19 @@
+◎　NEO_BUG-3805 #18840 自動表示メッセージが消去されるべきタイミングで消去されていない
+  → 161215
+  * Handlerの実装には、
+      - UIThread側で実装してしまうので、コストかかる
+      - メモリリーク
+    があるため、AlarmManagerに実装をし直した
+  * AlarmManagerについて
+      - 今回はDOZE(深い、浅い長眠りモードのこと)になる前に、onDestroyでunregisterしているため、DOZEの影響がない
+      - set関数自身は最大75%の遅延がある
+    以上のため、Handlerの実装に戻る
+  * Handler実装に、
+      - メモリリークを防ぐため、WeakReferenceを実装した
+      - Looperをnew HandlerThreadのLooperに指定し、非同期処理を行うように修正した
+  マージ済み
+
+◎　NEO_BUG-3096 EMM自動表示メッセージが時間経過でも消去されない
+  → 161215
+  * 3805に参考
+  マージ済み
