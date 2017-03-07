@@ -1,0 +1,20 @@
+NEO_BUG-5648 プリセット情報の保持と使用はpreset_shared_preferenceとOrmaBranch並列になっている
+  起票した
+
+◎ NEO_BUG-5648 プリセット情報の保持と使用はpreset_shared_preferenceとOrmaBranch並列になっている
+  * スキップのpreset_shared_preferenceの初期が保留するが、presetのshared_preferenceにマージされないように修正した
+  * 放送受信設定のpreset_number_shared_preferenceをすべて削除した
+  * 設定の受信関連(受信とチャンネル入換)のpreset_number_shared_preferenceを削除
+  * ワンタッチ選局のスキップチャンネルの判定をpreset_number_shared_preferenceから、Ormaに参照するように修正した
+  レビュー待ち
+
+◎ NEO_BUG-5653 1つのプリセット番号が複数のチャンネルに設定されてしまう
+  * Ormaにプリセット番号を更新する前に、元々のあてったチャンネルのプリセットをクリアする処理を追加した
+  レビュー待ち
+
+◎ NEO_BUG-5684 channel情報のinternal_providers_dataの更新があるときに、Ormaのみ対して更新しているが、TIFへの更新がされていない
+  起票した
+  * StbManagerServiceでのプリセット番号とマイチャンネルの設定は、TIFとの同期を追加した
+    取得時、TIFをOrmaに更新
+    設定時、OrmaをTIFに更新
+  レビュー待ち

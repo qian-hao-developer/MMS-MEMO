@@ -1,0 +1,32 @@
+◎ NEO_BUG-5112 【未再現】設置設定のチャンネル設定でチャンネル入換画面の「非選局」設定が保存されない
+  * 未再現のため、山星さんに変更
+  * 以下のコメントを追加
+    以下の手順で、確認を行い：
+    1. アプリ NeoHome.signed-v0.9.6.2.apk を端末にインストールする
+    2. 設定→アプリ→テレビメニュー→データを消去　で、初期化する
+    3. メンテナンス→放送受信設定　で、全ネットワークを自動受信し、画面表示ボタンの押下で、受信周波数もOrmaDBに保存する処理を行う
+    4. 設定→設置設定→チャンネル設定→地上デジタル→チャンネル入換→+/-選局→一つのチャンネルを非選局にし（例として、NHK総合1・大阪）、戻るボタンで、非選局の設定を保存する
+    5. 再びチャンネル入換に入り、4.で設定した非選局の状態を確認する
+　     →4.で設定された非選局チャンネルが「非選局」に表示されることを確認した
+　     （adbでOrmaBranchを確認したところ、非選局（isTune）の状態が保存されていることも確認できた）
+    6. adbコマンドで、アプリをアップする
+　     → adb connect xxx.xxx.xxx.xxx
+　     → adb root
+　     → adb connect xxx.xxx.xxx.xxx
+　     → adb shell mount -w -o remount /dev/block/by-name/system /system
+　     → adb shell rm /system/priv-app/com.kddi.catv.neo.uiapp-1/TV.apk （私の環境では、com.kddi.catv.neo.uiapp-1の名前でフォルダを作成しており、NeoHome.xxxxのアプリをTV.apkに名前を変更して、インストールしていた）
+　     → adb push ./NeoHome.signed-v0.10.0.1.apk /sdcard/Download
+　     → adb cp /sdcard/Download/NeoHome.signed-v0.10.0.1.apk /system/priv-app/com.kddi.catv.neo.uiapp-1/TV.apk
+　     → adb shell chmod 644 /system/priv-app/com.kddi.catv.neo.uiapp-1/TV.apk
+　     → adb reboot
+    7. 設定→設置設定→チャンネル設定→地上デジタル→チャンネル入換　に遷移し、非選局の設定状態を観測する
+　     →4.で設定された非選局チャンネルが「非選局」と表示することが確認できた
+　     （adbでOrmaBranchを確認したところ、非選局（isTune）の状態が保存されていることも確認できた）
+    8. 設定→設置設定→チャンネル設定→地上デジタル→チャンネル入換→+/-選局→他のチャンネルを非選局にし（例として、NHK総合1・京都）、戻るボタンで、設定を終える
+    9. 再びチャンネル入換に入り、8.で設定した非選局の状態を確認する
+　     →8.で設定された非選局チャンネルが「非選局」に表示されることを確認した
+　     （adbでOrmaBranchを確認したところ、非選局（isTune）の状態が保存されていることも確認できた）
+    以上で、上記で戸田さんが記述していただいた
+    ”アプリを更新した直後にこのチケットの非選局が保存されない件は必ず再現します”
+    について、再現できませんでした。
+    今回の検証を含め、直接AndroidStudioのRunでアプリをアップすること手法と、検証側と同様にadb経由でapkをインストール（アップ）する手法とも、プリセットの状態や非選局の状態などが正常に動いているため、再現できませんでした。
